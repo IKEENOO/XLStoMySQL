@@ -19,7 +19,7 @@ The parsing file has 4 columns; the program should allow parsing based on user s
 You can choose one of two ways:
 1. Paste the connection information in the db_connect.php file
 ```
-  $port = '';
+  $hostname = '';
   $user = '';
   $password = '';
   $db_name = '';
