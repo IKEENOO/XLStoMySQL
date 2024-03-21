@@ -69,7 +69,7 @@
 
             <!--
             <div class="p__setting">
-                <input type="text" value="localhost" name="port" placeholder="Port">
+                <input type="text" value="hostname" name="hostname" placeholder="Port">
                 <input type="text" value="root" name="user" placeholder="User">
                 <input type="text" value="passowrd" name="password" placeholder="Password">
                 <input type="text" value="db" name="db_name" placeholder="DB Name">
