@@ -62,19 +62,22 @@
 
     $useStartCode = $inputStartCode != null;
     $useFinishCode = $inputFinishCode != null;
-    $pattern = '/([a-zA-z]*)?(\d+)(.*)/';
-    preg_match($pattern, $inputStartCode, $matchesStart);
-    preg_match($pattern, $inputFinishCode, $matchesFinish);
+    if($useStartCode && $useFinishCode) {
+        $pattern = '/([a-zA-z]*)?(\d+)(.*)/';
+        preg_match($pattern, $inputStartCode, $matchesStart);
+        preg_match($pattern, $inputFinishCode, $matchesFinish);
 
-    if(count($matchesStart)==0||count($matchesFinish)==0)getError();
-    if (($matchesStart[1] != $matchesFinish[1]) || ($matchesStart[3] != $matchesFinish[3])) getError();
+        if(count($matchesStart)==0||count($matchesFinish)==0)getError();
+        if (($matchesStart[1] != $matchesFinish[1]) || ($matchesStart[3] != $matchesFinish[3])) getError();
+    }
+    
 
     foreach ($data as $row) {
         if ($count > 0) {
             $code = $row[$_POST['codeSelect']];
             if($code == "") continue;
 
-            if ($useStartCode || $useFinishCode) {
+            if ($useStartCode && $useFinishCode) {
                 preg_match($pattern, $code, $matchesCode);
                 if ($matchesStart[1] != $matchesCode[1] || $matchesStart[3] != $matchesCode[3]) {
                     continue;
