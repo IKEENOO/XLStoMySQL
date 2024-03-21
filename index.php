@@ -69,10 +69,10 @@
 
             <!--
             <div class="p__setting">
-                <input type="text" value="127.0.0.1:3306" name="port" placeholder="Port">
+                <input type="text" value="localhost" name="port" placeholder="Port">
                 <input type="text" value="root" name="user" placeholder="User">
-                <input type="text" value="van4dijk" name="password" placeholder="Password">
-                <input type="text" value="parser" name="db_name" placeholder="DB Name">
+                <input type="text" value="passowrd" name="password" placeholder="Password">
+                <input type="text" value="db" name="db_name" placeholder="DB Name">
             </div>
             -->
 
