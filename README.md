@@ -27,7 +27,7 @@ You can choose one of two ways:
 2. Uncomment the data entry fields in the index.php file (in this case, the data can be entered directly on the site)
 ```
   <div class="p__setting">
-    <input type="text" value="" name="port" placeholder="Port">
+    <input type="text" value="" name="hostname" placeholder="Port">
     <input type="text" value="" name="user" placeholder="User">
     <input type="text" value="" name="password" placeholder="Password">
     <input type="text" value="" name="db_name" placeholder="DB Name">
